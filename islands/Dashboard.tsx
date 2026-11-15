@@ -69,7 +69,7 @@ export default function Dashboard() {
         {tab === "forms" ? <FormsTab filter={filter} /> : null}
       </TabPanel>
       <p className="marginalia">
-        Erfasst werden nur Besucher, die der Kategorie „Statistik“ zugestimmt haben — die Zahlen sind deshalb
+        Erfasst werden nur Besucher, die der Kategorie „Statistik“ zugestimmt haben, die Zahlen sind deshalb
         kleiner als die tatsächliche Reichweite. Keine IP-Adressen, keine Formularinhalte, keine Drittanbieter.
       </p>
     </div>
@@ -415,7 +415,7 @@ function FormsTab({ filter }: { filter: Filter }) {
                   ]}
                 />
                 <h3>Abgebrochen nach Feld</h3>
-                <p className="marginalia">Das zuletzt ausgefüllte Feld — nur sein Name, nie der Inhalt.</p>
+                <p className="marginalia">Das zuletzt ausgefüllte Feld, nur sein Name, nie der Inhalt.</p>
                 <BarList empty="Kein Abbruch." rows={f.abandonedAt.map((a) => ({ key: a.field, label: a.field, value: a.count }))} />
               </Card>
             ))}

@@ -41,7 +41,7 @@ return [
             ['in' => 'body', 'name' => 'events', 'description' => 'pageview, click, outbound, scroll, section, form_start, form_field, form_submit, exit'],
         ],
         'responses' => [
-            ['status' => 204, 'description' => 'Angenommen — oder still verworfen (Bot, GPC, Site aus, Ratenlimit).'],
+            ['status' => 204, 'description' => 'Angenommen, oder still verworfen (Bot, GPC, Site aus, Ratenlimit).'],
             ['status' => 400, 'description' => 'Ungültiger Body.'],
             ['status' => 403, 'description' => 'Origin gehört nicht zur angegebenen Site.'],
         ],
@@ -57,10 +57,10 @@ return [
             ['in' => 'body', 'name' => 'visitorId', 'description' => 'Die Kennung aus `tds-vid` im Browser.'],
         ],
         'responses' => [
-            ['status' => 200, 'description' => '`{removed}` — Anzahl gelöschter Besuche.'],
+            ['status' => 200, 'description' => '`{removed}`: Anzahl gelöschter Besuche.'],
             ['status' => 400, 'description' => 'Keine gültige Kennung.'],
             ['status' => 429, 'description' => 'Zu viele Anfragen.'],
-            ['status' => 503, 'description' => 'Datenbank nicht erreichbar — nichts gelöscht.'],
+            ['status' => 503, 'description' => 'Datenbank nicht erreichbar, nichts gelöscht.'],
         ],
     ],
     [

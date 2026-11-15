@@ -29,6 +29,7 @@ composer install && composer test   # phpunit; the DB suite needs TDS_TEST_DB_DS
 - A failed load is an in-flow alert, never an empty statistic. `apiFetch` only, never a relative `fetch`.
 - Every route change updates `php/docs/api.php`. Migrations stay in the `20261009*` band.
 - Stay in the `0.1.x` line (`tds-admin-frontend` pins `^0.1.x`). Versions move via the release workflow only.
+- Follows the TDS quality standard (`../tds-ops/standards/quality.md`): no AI slop, clean code.
 
 ## Topic files
 
