@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Skeleton } from "@tracht-digital-solutions/tds-shared/components";
+import { Skeleton } from "@tracht-digital-labs/tds-shared/components";
 import { Sparkline } from "./charts";
 import { loadReport, num, pct, type Loaded, type SeriesPoint, type Totals } from "./lib";
 

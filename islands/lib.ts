@@ -1,4 +1,4 @@
-import { apiFetch } from "@tracht-digital-solutions/tds-shared/api";
+import { apiFetch } from "@tracht-digital-labs/tds-shared/api";
 
 /** The sites the beacon runs on, in the order the filter lists them. */
 export const SITES: ReadonlyArray<{ key: string; label: string }> = [

@@ -1,4 +1,4 @@
-import { defineExtension } from "@tracht-digital-solutions/tds-frontend-contract";
+import { defineExtension } from "@tracht-digital-labs/tds-frontend-contract";
 
 /**
  * Besucher-Statistik — the dashboard for the public sites' own, consent-gated
@@ -25,7 +25,7 @@ export default defineExtension({
     {
       id: "analytics-visits",
       title: "Besuche (7 Tage)",
-      island: "@tracht-digital-solutions/tds-ext-analytics/widgets/Widget.astro",
+      island: "@tracht-digital-labs/tds-ext-analytics/widgets/Widget.astro",
       size: "md",
       permission: "analytics:read",
       dataEndpoint: "/analytics/summary",
@@ -36,14 +36,14 @@ export default defineExtension({
     {
       id: "analytics",
       label: "Besucher-Statistik",
-      island: "@tracht-digital-solutions/tds-ext-analytics/islands/Settings.astro",
+      island: "@tracht-digital-labs/tds-ext-analytics/islands/Settings.astro",
       order: 60,
     },
   ],
   routes: [
     {
       pattern: "/statistik",
-      entrypoint: "@tracht-digital-solutions/tds-ext-analytics/pages/Index.astro",
+      entrypoint: "@tracht-digital-labs/tds-ext-analytics/pages/Index.astro",
       permission: "analytics:read",
     },
   ],

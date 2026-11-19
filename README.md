@@ -9,7 +9,7 @@ who agreed to the consent category „Statistik“.
 
 | Part | Where |
 |---|---|
-| Beacon (`startAnalytics`, `forgetAnalytics`) | `@tracht-digital-solutions/tds-shared/analytics` (≥ 0.50.0) |
+| Beacon (`startAnalytics`, `forgetAnalytics`) | `@tracht-digital-labs/tds-shared/analytics` (≥ 0.50.0) |
 | Collector, reports, retention | `php/src/AnalyticsModule.php`, composed into `tds-core-frontend-api` |
 | Dashboard `/statistik`, widget, settings | `src/index.ts` → `tds-admin-frontend` |
 
@@ -32,7 +32,7 @@ Raw rows are kept 90 days (configurable), then folded into anonymous day totals.
 
 ```astro
 <script>
-  import { startAnalytics } from "@tracht-digital-solutions/tds-shared/analytics";
+  import { startAnalytics } from "@tracht-digital-labs/tds-shared/analytics";
   startAnalytics({ site: "landing", lang: document.documentElement.lang || "de" });
 </script>
 ```

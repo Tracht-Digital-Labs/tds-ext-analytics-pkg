@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { primeRuntimeConfig, resetApiBase } from "@tracht-digital-solutions/tds-shared/api";
+import { primeRuntimeConfig, resetApiBase } from "@tracht-digital-labs/tds-shared/api";
 import Dashboard from "./Dashboard";
 import WidgetBody from "./WidgetBody";
 

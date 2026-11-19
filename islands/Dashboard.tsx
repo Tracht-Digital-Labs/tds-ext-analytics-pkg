@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { Alert, Skeleton, TabPanel, Tabs } from "@tracht-digital-solutions/tds-shared/components";
+import { Alert, Skeleton, TabPanel, Tabs } from "@tracht-digital-labs/tds-shared/components";
 import { AreaChart, BarList, type BarRow } from "./charts";
 import {
   BROWSER_LABELS,
